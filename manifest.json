@@ -1,0 +1,24 @@
+{
+    "name":"Get To QR Code ",
+    "description":"Select Text to Generate QR",
+    "version":"0.0.1",
+    "manifest_version":3,
+
+    "action":{
+        "default_popup":"qr.html",
+        "default_icon":"qr.png"
+
+        
+    },
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js":["index.js"]
+        }
+    ]
+    
+
+
+}
