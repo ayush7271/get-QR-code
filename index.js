@@ -1,6 +1,5 @@
 window.addEventListener('mouseup', () => {
-  const selected = document.getSelection();'
-  '
+  const selected = document.getSelection();
   if (selected) {
     const text = selected.toString();
     console.log(text);
