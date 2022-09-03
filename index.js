@@ -1,4 +1,9 @@
-window.addEventListener('mouseup', () => {
+window.addEventListener('mouseup', (e) => {
+if(e.target.tagName.toUpperCase()=='INPUT'){
+  return
+}
+
+
   const selected = document.getSelection();
   if (selected) {
     const text = selected.toString();
